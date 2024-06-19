@@ -1,0 +1,49 @@
+﻿@model CitizenShipViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h4>Update</h4>
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="UpdateCitizenDetails">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+              
+                <div class="form-group">
+                    <label asp-for="CitizenCertificateNo" class="control-label"></label>
+                    <input asp-for="CitizenCertificateNo" class="form-control" />
+                    <span asp-validation-for="CitizenCertificateNo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FullName" class="control-label"></label>
+                    <input asp-for="FullName" class="form-control" />
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BirthPlace" class="control-label"></label>
+                    <input asp-for="BirthPlace" class="form-control" />
+                    <span asp-validation-for="BirthPlace" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PermanentAddress" class="control-label"></label>
+                    <input asp-for="PermanentAddress" class="form-control" />
+                    <span asp-validation-for="PermanentAddress" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CitizenShipIssuedAddress" class="control-label"></label>
+                    <input asp-for="CitizenShipIssuedAddress" class="form-control" />
+                    <span asp-validation-for="CitizenShipIssuedAddress" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>  
+</div>
+
+
+
